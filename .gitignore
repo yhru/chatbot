@@ -35,4 +35,5 @@
 /config/master.key
 
 # Ignore envrc
-/.envrc
+.env
+.envrc
