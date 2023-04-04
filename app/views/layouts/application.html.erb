@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <style>
+    section {
+      padding: 10em;
+    }
+  </style>
+  <section>
+    <%= yield %>
+  </section>
+  </body>
+</html>
