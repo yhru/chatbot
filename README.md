@@ -2,6 +2,8 @@
 
 This is a Ruby on Rails application that allows users to ask a question to a ChatBot using OpenAI API and see the response on the page.
 
+![MyImage](app/assets/images/chatbot.png)
+
 ## Installation
 
 To install this application, follow these steps:
