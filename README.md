@@ -10,19 +10,17 @@ To install this application, follow these steps:
 
 1. Clone this repository to your local machine:
 
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/yhru/chatbot.git
 
 2. Navigate into the project directory:
 
-   cd your-repo
+   cd chatbot
 
 3. Install the necessary dependencies using bundler:
 
    bundle install
 
-4. Set up your environment variables for the OpenAI API key. Copy the `.env.example` file to `.env` and add your OpenAI API key:
-
-   cp .env.example .env
+4. Add the API_TOKEN to the .envrc
 
 5. Start the Rails server:
 
@@ -40,4 +38,4 @@ To use the application, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the Apache 2.0 License. See the `LICENSE` file for details.
