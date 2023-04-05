@@ -20,7 +20,7 @@ To install this application, follow these steps:
 
    `bundle install`
 
-4. Set up your the api_token variable
+4. Add the API_TOKEN to the .envrc
 
 5. Start the Rails server:
 
@@ -40,4 +40,4 @@ To use the application, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the Apache 2.0 License. See the `LICENSE` file for details.
