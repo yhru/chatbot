@@ -15,6 +15,10 @@
     <div class="card-body bg rounded-bottom">
       <% if params[:response].present? %>
         <p class="mb-0"><%= params[:response] %></p>
+      <% elsif flash[:error] %>
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:error] %>
+        </div>
       <% else %>
         <em class="text-muted">Response will go there...</em>
       <% end %>
