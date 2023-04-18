@@ -1,12 +1,23 @@
-<h1>Chatbot</h1>
-
-<%= form_tag ask_path, method: :post do %>
-  <%= text_field_tag :question, nil, placeholder: "Ask a question... ✨" %>
-  <%= submit_tag "Ask" %>
-<% end %>
-
-<div class="response">
-  <% if params[:response].present? %>
-    <p><%= params[:response] %></p>
+<div class="container">
+  <h1 class="text-center">Chatbot 🖊️</h1>
+  <%= form_tag ask_path, method: :post, class: "my-4" do %>
+    <%= csrf_meta_tags %>
+    <div class="input-group mb-3">
+      <%= text_field_tag :question, nil, class: "form-control bg-dark text-white border-1 rounded-start me-1", placeholder: "Ask a question... ✨" %>
+      <button class="btn btn-outline-success me-1" type="submit">Ask</button>
+      <button class="btn btn-outline-secondary" type="reset">Clear</button>
+    </div>
   <% end %>
+  <div class="card bg-dark mt-4">
+    <div class="card-header bg-secondary">
+      <p class="text-white mb-0">Chatbot Response</p>
+    </div>
+    <div class="card-body bg rounded-bottom">
+      <% if params[:response].present? %>
+        <p class="mb-0"><%= params[:response] %></p>
+      <% else %>
+        <em class="text-muted">Response will go there...</em>
+      <% end %>
+    </div>
+  </div>
 </div>
